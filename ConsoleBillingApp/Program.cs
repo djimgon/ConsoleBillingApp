@@ -127,12 +127,9 @@ namespace ConsoleBillingApp
             Console.WriteLine("Количество : " + order1.productAmount() + "\n");
 
 
-            Console.Write("Выберите доступнык способы оплаты: \n\n");
-            Console.Write("1 - Payeer \n");
-
-            //string case1 = 0;
-            //case = Console.ReadLine();
-
+            //Console.Write("Выберите доступнык способы оплаты: \n\n");
+            //Console.Write("1 - Payeer \n");
+      
             var payeer = new PayeerProvider(1233456, "ABCDEF", "https://mail.ru/");
             payeer.pay(order1.getOrderId(), order1.productName(), order1.productPrice());
         }
